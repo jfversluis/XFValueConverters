@@ -13,6 +13,12 @@ namespace XFValueConverters
         public MainPage()
         {
             InitializeComponent();
+
+            ResultLabel.BindingContext = new RandomObject
+            {
+                Color = "BlaColor",
+                Name = "Subscribe now"
+            };
         }
     }
 }
